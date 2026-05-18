@@ -3,7 +3,7 @@ import styles from './LoginPage.module.css';
 
 export default function LoginPage() {
   const [name, setName] = useState('');
-+  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
 
   const submit = (e) => {
     e.preventDefault();

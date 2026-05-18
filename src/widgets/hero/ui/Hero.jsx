@@ -18,13 +18,16 @@ export function Hero({ onDonate }) {
         <div className={styles.actions}>
           <Button
             variant="primary"
-            onClick={() => document.getElementById('watch')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => { window.location.hash = '#streams'; }}
           >
             Смотреть сейчас
           </Button>
           <Button
             variant="ghost"
-            onClick={() => document.getElementById('characters')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('donate')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             Узнать больше
           </Button>
