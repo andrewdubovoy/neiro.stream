@@ -1,0 +1,4 @@
+/* scoped styles for streams page */
+.page { padding: 24px }
+.title { font-size: 28px; margin-bottom: 16px }
+.backBtn { background: transparent; border: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); padding: 6px 10px; border-radius: 8px; cursor: pointer }

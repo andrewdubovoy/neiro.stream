@@ -1,0 +1,3 @@
+.routeContainer{animation:routeIn .42s cubic-bezier(.2,.9,.2,1);}
+
+@keyframes routeIn{from{opacity:0; transform:translateY(8px) scale(.998)} to{opacity:1; transform:none}} 

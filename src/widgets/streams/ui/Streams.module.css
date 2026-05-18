@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.grid { margin-top: 12px }
+
+@keyframes fadeInUp { from { opacity:0; transform: translateY(8px) } to { opacity:1; transform: translateY(0) } }
+
+.itemFade {
+  animation-name: fadeInUp;
+  animation-duration: 420ms;
+  animation-fill-mode: both;
+}

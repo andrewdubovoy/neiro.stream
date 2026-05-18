@@ -1,3 +1,7 @@
+.userWrap { display:flex; gap:8px; align-items:center }
+.userName { color:#ffd1e0; font-weight:600 }
+.logout { background:transparent; border:1px solid rgba(255,255,255,0.06); color:#fff; padding:6px 8px; border-radius:8px; cursor:pointer }
+
 .nav {
   position: fixed;
   top: 0;
