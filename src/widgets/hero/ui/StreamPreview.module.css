@@ -1,0 +1,194 @@
+.preview {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 0.5px solid var(--border-bright);
+  background: var(--bg2);
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #1a0610 0%, #0d0608 40%, #1a0010 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liveBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e83250;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+.liveDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  animation: dot-blink 1.2s ease-in-out infinite;
+}
+
+.viewersBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 2px;
+  border: 0.5px solid var(--border);
+}
+
+.avatarContainer {
+  width: 180px;
+  height: 220px;
+  position: relative;
+  animation: float 4s ease-in-out infinite;
+}
+
+.avatarGlow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 77, 122, 0.2) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.avatarSvg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Chat */
+.chat {
+  padding: 0.8rem;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.chatMsg {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+  animation: slide-in 0.3s ease-out;
+}
+
+.username {
+  color: var(--accent);
+  font-weight: 500;
+  margin-right: 0.3rem;
+}
+
+.donator .username {
+  color: #ffd700;
+}
+
+.donator {
+  background: rgba(255, 215, 0, 0.06);
+  border-left: 2px solid rgba(255, 215, 0, 0.5);
+  padding: 4px 6px;
+  border-radius: 1px;
+}
+
+/* Donate notification */
+.donateNotif {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg3);
+  border: 0.5px solid rgba(255, 215, 0, 0.4);
+  border-radius: 3px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  animation: notif-appear 0.4s ease-out;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.notifAmount {
+  color: #ffd700;
+  font-weight: 500;
+  font-family: 'DM Mono', monospace;
+}
+
+.notifText {
+  color: var(--text-muted);
+}
+
+/* Footer */
+.footer {
+  padding: 0.7rem 0.8rem;
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.input {
+  flex: 1;
+  background: var(--bg3);
+  border: 0.5px solid var(--border);
+  border-radius: 2px;
+  padding: 0.5rem 0.8rem;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-dim);
+}
+
+.donateBtn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.donateBtn:hover {
+  background: var(--accent2);
+}

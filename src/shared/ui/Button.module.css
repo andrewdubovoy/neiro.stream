@@ -1,0 +1,39 @@
+.btn {
+  border: none;
+  border-radius: 2px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+  padding: 0.9rem 2rem;
+}
+
+.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.primary:hover {
+  background: var(--accent2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255, 77, 122, 0.4);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 0.5px solid var(--border-bright);
+  padding: 0.9rem 1.5rem;
+}
+
+.ghost:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

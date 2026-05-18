@@ -1,0 +1,28 @@
+.section {
+  padding: 6rem 5rem;
+  border-top: 0.5px solid var(--border);
+}
+
+.heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: var(--text);
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.heading em {
+  color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 2rem;
+}

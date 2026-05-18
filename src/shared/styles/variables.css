@@ -1,0 +1,28 @@
+:root {
+  --bg: #0d0608;
+  --bg2: #130a0d;
+  --bg3: #1a0c10;
+  --accent: #ff4d7a;
+  --accent2: #ff1a55;
+  --accent-dim: rgba(255, 77, 122, 0.15);
+  --accent-glow: rgba(255, 77, 122, 0.35);
+  --text: #f5e6ea;
+  --text-muted: #9a7580;
+  --text-dim: #5a3540;
+  --border: rgba(255, 77, 122, 0.15);
+  --border-bright: rgba(255, 77, 122, 0.4);
+}
+
+body.light {
+  --bg: #fff0f3;
+  --bg2: #ffe4ea;
+  --bg3: #ffd6de;
+  --accent: #e8215a;
+  --accent2: #c41848;
+  --accent-dim: rgba(232, 33, 90, 0.1);
+  --text: #2a0812;
+  --text-muted: #7a3048;
+  --text-dim: #c4a0aa;
+  --border: rgba(232, 33, 90, 0.15);
+  --border-bright: rgba(232, 33, 90, 0.4);
+}

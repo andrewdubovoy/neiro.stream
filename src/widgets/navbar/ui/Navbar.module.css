@@ -1,0 +1,64 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--border);
+  background: rgba(13, 6, 8, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.dot {
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.links a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--text);
+}
+
+.cta {
+  background: var(--accent);
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2px;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  font-size: 0.85rem !important;
+  transition: background 0.2s !important;
+}
+
+.cta:hover {
+  background: var(--accent2);
+  color: white !important;
+}
